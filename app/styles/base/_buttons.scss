@@ -1,0 +1,90 @@
+/*doc
+---
+title: Buttons
+name: 2_buttons
+category: Base CSS
+---
+
+Button styles can be applied to any element. Typically you'll want to
+use either a `<button>` or an `<a>` element:
+
+```html_example
+<button class="btn btn-default">Click</button>
+<a class="btn btn-primary" href="#">Me!</a>
+```
+
+## Options
+
+Use any of the available button classes:
+
+```html_example
+<!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+```
+
+## Sizes
+
+Add ```.btn-lg``` or ```.btn-sm``` for different button sizes:
+
+```html_example
+<p>
+  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary">Default button</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-sm">Small button</button>
+</p>
+```
+
+*/
+
+// General
+.btn {
+  display: inline-block;
+  padding: 5px;
+  line-height: 1;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+
+  &:hover,
+  &:focus {
+  }
+}
+
+// Options
+.btn-default {
+  background-color: #FFF;
+  border-color: #CCC;
+  color: #333;
+
+  &:hover,
+  &:focus {
+    background-color: #E6E6E6;
+    border-color: #ADADAD;
+    color: #333;
+  }
+}
+.btn-primary {
+  background-color: #337AB7;
+  border-color: #2E6DA4;
+  color: #FFF;
+}
+
+
+// Sizes
+.btn-lg {
+  font-size: 150%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn-sm {
+  font-size: 70%;
+  padding: 3px;
+  border-radius: 2px;
+}

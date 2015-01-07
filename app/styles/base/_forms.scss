@@ -1,0 +1,74 @@
+/*doc
+---
+title: Forms
+name: 3_forms
+category: Base CSS
+---
+
+
+## Labels
+
+Put labels before form element, with a ```for=""``` property or around it:
+
+```html_example
+<p>
+  <label for="input_id">Label</label> <input type="text" id="input_id">
+</p>
+<p>
+  <label>Wrapping Label <input type="text"></label>
+</p>
+```
+
+### Options
+
+## Inputs
+
+## Selects
+
+*/
+
+legend,
+fieldset > label {
+
+}
+
+
+// Labels
+label {
+  cursor: pointer;
+  display: block;
+
+  &.inline {
+    float:left;
+  }
+}
+
+
+// Inputs
+input {
+}
+input[type="search"],
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+  &:focus {
+
+  }
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  vertical-align: middle;
+}
+
+
+// Selects
+select {
+
+}

@@ -1,0 +1,40 @@
+/*doc
+---
+title: Typography
+name: 0_typography
+category: Base CSS
+---
+
+
+## Headings
+
+...
+
+*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+
+}
+
+
+// Text
+p {
+}
+small {
+  font-size: 0.5rem;
+  line-height: 1;
+}
+strong {
+}

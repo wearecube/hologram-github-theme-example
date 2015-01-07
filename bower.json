@@ -1,0 +1,10 @@
+{
+  "name": "hologram-github-theme-example",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {
+    "hologram-github-theme": "~0.1.1"
+  }
+}
