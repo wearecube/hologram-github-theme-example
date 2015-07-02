@@ -2,7 +2,11 @@
 
 This is a very simple [Github Styleguide](https://github.com/styleguide) inspired theme for Trulia's [Hologram](https://github.com/trulia/hologram), the ruby front-end doc generator.
 
-[See example](http://wearecube.github.io/hologram-github-theme-example/styleguide)
+## Preview
+
+![Example](example.png?raw=true)
+
+[Visit example styleguide](http://wearecube.github.io/hologram-github-theme-example/styleguide)
 
 ## Usage
 
@@ -39,7 +43,7 @@ dependencies:
 
 # The CSS files to be included in the styleguide
 css_include:
-   - 'dist/styles/vendor.css'
+  - 'dist/styles/vendor.css'
   - 'dist/styles/main.css'
 
 # The JavaScript files to included in the styleguide
@@ -51,7 +55,7 @@ global_title: Styleguide
 
 ```
 
-In this example the markdown file `src/styles/styleguide.md` is used for the content on the index page.
+In this example the markdown file `app/styles/styleguide.md` is used for the content on the index page.
 
 For more details on the options, checkout the [Hologram documentation](https://github.com/trulia/hologram/blob/master/README.md#creating-a-yaml-config-file)
 
@@ -63,8 +67,8 @@ hologram -c hologram_config.yml
 
 ## Authors
 
-The Hologram Github Theme has been created by [Mathis Hofer](https://github.com/hupf).
+The Hologram Github Theme has been created by [Mathis Hofer](https://github.com/hupf). Many thanks to [Maurice Kühlborn](https://github.com/minimalweb) and [Oscar](https://github.com/obartra) for their contributions.
 
 ## License
 
-The Hologram Github Theme is licensed under the [MIT License](https://github.com/wearecube/hologram-github-theme/blob/master/LICENSE)
+The Hologram Github Theme is licensed under the [MIT License](LICENSE)
