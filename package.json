@@ -1,34 +1,35 @@
 {
   "name": "hologram-github-theme-example",
   "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-sass": "~0.7.3",
-    "grunt-contrib-jshint": "~0.9.2",
-    "grunt-contrib-cssmin": "~0.9.0",
-    "grunt-contrib-connect": "~0.7.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-htmlmin": "~0.2.0",
-    "grunt-bower-install": "~1.4.0",
-    "grunt-contrib-imagemin": "~0.6.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-hologram": "0.0.4",
-    "grunt-rev": "~0.1.0",
-    "grunt-autoprefixer": "~0.7.2",
-    "grunt-usemin": "~2.1.0",
-    "grunt-mocha": "~0.4.10",
-    "grunt-newer": "~0.7.0",
-    "grunt-svgmin": "~0.4.0",
-    "grunt-concurrent": "~0.5.0",
-    "load-grunt-tasks": "~0.4.0",
-    "time-grunt": "~0.3.1",
-    "jshint-stylish": "~0.1.5"
+  "description": "Example project that uses the Hologram Github Theme for the styleguide",
+  "scripts": {
+    "clean": "rimraf dist styleguide",
+    "copy:html": "copyfiles -u 1 'src/**/*.html' dist",
+    "copy:js": "copyfiles -u 1 'src/**/*.js' dist",
+    "copy:css": "copyfiles -u 1 'src/**/*.css' dist",
+    "copy:images": "copyfiles -u 1 'src/**/*.{png,jpg,svg}' dist",
+    "copy": "npm run copy:html && npm run copy:js && npm run copy:css && npm run copy:images",
+    "watch:copy": "watch 'npm run copy' src",
+    "css:sass": "node-sass --output-style compressed src/css/main.scss dist/css/main.css",
+    "css": "npm run css:sass",
+    "watch:css": "watch -d -u --wait=0 'npm run css' src/css",
+    "styleguide": "hologram -c hologram_config.yml",
+    "watch:styleguide": "watch 'npm run css && npm run copy && npm run styleguide' src",
+    "build": "npm run clean && npm run copy && npm run css && npm run styleguide",
+    "browser-sync": "browser-sync start --server dist --files 'dist/**/*'",
+    "browser-sync:styleguide": "browser-sync start --server styleguide --files 'styleguide/**/*'",
+    "watch": "parallelshell 'npm run watch:copy' 'npm run watch:css'",
+    "serve": "parallelshell 'npm run browser-sync' 'npm run watch'",
+    "serve:styleguide": "parallelshell 'npm run browser-sync:styleguide' 'npm run watch:styleguide'"
   },
-  "engines": {
-    "node": ">=0.10.0"
+  "author": "Mathis Hofer <hofer@puzzle.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "copyfiles": "^0.2.1",
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "rimraf": "^2.4.4",
+    "watch": "^0.16.0"
   }
 }

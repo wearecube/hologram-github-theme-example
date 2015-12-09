@@ -5,12 +5,12 @@ name: 2_buttons
 category: Base CSS
 ---
 
-Button styles can be applied to any element. Typically you'll want to
+Button <a href="#">styles</a> can be applied to any element. Typically you'll want to
 use either a `<button>` or an `<a>` element:
 
 ```html_example
 <button class="btn btn-default">Click</button>
-<a class="btn btn-primary" href="#">Me!</a>
+<a class="btn btn-default" href="#">Me!</a>
 ```
 
 ## Options
@@ -51,6 +51,7 @@ Add `.btn-lg` or `.btn-sm` for different button sizes:
   border-radius: 3px;
   border-width: 1px;
   border-style: solid;
+  text-decoration: none;
 
   &:hover,
   &:focus {
