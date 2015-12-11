@@ -37,6 +37,7 @@ fieldset > label {
 label {
   cursor: pointer;
   display: block;
+  font-weight: 700;
 
   &.inline {
     float:left;
@@ -46,6 +47,8 @@ label {
 
 // Inputs
 input {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1rem;
 }
 input[type="search"],
 input[type="text"],
