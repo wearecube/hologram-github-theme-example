@@ -4,7 +4,10 @@ This is an example web application using Hologram with the Github Theme to gener
 
 ## Prerequisites
 
+Assuming you have Ruby with Bundler and NPM/Node installed:
+
 ```
+bundle install
 npm install
 ```
 
