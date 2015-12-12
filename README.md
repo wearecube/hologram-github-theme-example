@@ -1,6 +1,6 @@
 # Hologram Github Theme Example
 
-This is an example web application using Hologram with the Github Theme to generate a styleguide.
+This is an example web application using [Hologram](https://github.com/trulia/hologram) with the [Hologram Github Theme](https://github.com/wearecube/hologram-github-theme) to generate a styleguide.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ npm run build
 
 The styleguide can then be found in the ```styleguide/``` directory, the app in the ```dist/``` directory.
 
-To start a live-reload server and open the styleguide:
+To start server with live-reload and open the styleguide in a browser:
 
 ```
 npm run serve:styleguide
