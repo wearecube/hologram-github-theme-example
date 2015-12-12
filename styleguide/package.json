@@ -1,0 +1,32 @@
+{
+  "name": "hologram-github-theme",
+  "version": "0.1.4",
+  "description": "A Github Styleguide inspired theme for Hologram",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearecube/hologram-github-theme.git"
+  },
+  "keywords": [
+    "hologram",
+    "styleguide",
+    "theme"
+  ],
+  "author": {
+    "name": "Mathis Hofer",
+    "email": "hofer@puzzle.ch"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wearecube/hologram-github-theme/issues"
+  },
+  "homepage": "https://github.com/wearecube/hologram-github-theme#readme",
+  "readme": "# Hologram Github Theme\n\nThis is a very simple [Github Styleguide](https://github.com/styleguide) inspired theme for Trulia's [Hologram](https://github.com/trulia/hologram), the ruby front-end doc generator.\n\n## Preview\n\n![Example](example.png?raw=true)\n\n[Visit example styleguide](http://wearecube.github.io/hologram-github-theme-example/styleguide)\n\n## Usage\n\nInstall Hologram:\n\n```\n$ gem install hologram\n```\n\nAdd this theme to your project using NPM:\n\n```\n$ npm install --save-dev hologram-github-theme\n```\n\nAlternatively you may use Bower:\n\n```\n$ bower install --save-dev hologram-github-theme\n```\n\nDefine the theme in your `hologram_config.yml`:\n\n```\n# Relative path(s) to your source files\nsource: app/styles\n\n# Relative path where you want the documentation to be built\ndestination: styleguide\n\n# The path that contains supporting assets for the documentation page\ndocumentation_assets: node_modules/hologram-github-theme\n\n# Category that will be used as the index.html (optional)\nindex: styleguide\n\n# A list of relative paths to folders containing any dependencies to copy\ndependencies:\n  - 'dist'\n\n# The CSS files to be included in the styleguide\ncss_include:\n  - 'dist/styles/vendor.css'\n  - 'dist/styles/main.css'\n\n# The JavaScript files to included in the styleguide\njs_include:\n  - 'dist/scripts/main.js'\n\n# The global title that is displayed at the top of the pages\nglobal_title: Styleguide\n\n```\n\nIn this example the markdown file `app/styles/styleguide.md` is used for the content on the index page. Also, if you're using Bower, adjust the package path accordingly: ```documentation_assets: bower_components/hologram-github-theme```.\n\nFor more details on the options, checkout the [Hologram documentation](https://github.com/trulia/hologram/blob/master/README.md#creating-a-yaml-config-file)\n\nFinally, build the styleguide:\n\n```\nhologram -c hologram_config.yml\n```\n\n## Authors\n\nThe Hologram Github Theme has been created by [Mathis Hofer](https://github.com/hupf). Many thanks to [Maurice Kühlborn](https://github.com/minimalweb) and [Oscar](https://github.com/obartra) for their contributions.\n\n## License\n\nThe Hologram Github Theme is licensed under the [MIT License](LICENSE)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "e1d49c127f759899c1c5def11174d5a76d5ede52",
+  "_id": "hologram-github-theme@0.1.4",
+  "_shasum": "6c6d1926dbc7bced202d84babc10964ef795d138",
+  "_from": "hologram-github-theme@*"
+}
